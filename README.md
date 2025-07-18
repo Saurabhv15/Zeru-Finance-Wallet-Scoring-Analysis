@@ -6,6 +6,30 @@ The goal of this project is to assign a **credit score** to each wallet address 
 
 ---
 
+## Dataset
+
+### **https://drive.google.com/file/d/1ISFbAXxadMrt7Zl96rmzzZmEKZnyW7FS/view**
+
+- **Dataset Name:** user_wallet_transaction.json  
+- **Description:** Contains historical transactions for multiple wallet addresses.  
+- **Columns:**
+  - `userWallet`: Wallet address (string)
+  - `action`: Type of action performed (Deposit, Borrow, Repay, LiquidationCall, etc.)
+  - `actionData`: Nested data containing transaction amount in wei and other metadata.
+
+### **Sample Record**
+
+```json
+{
+  "userWallet": "0x00000000001accfa9cef68cf5371a23025b6d4b6",
+  "action": "Deposit",
+  "actionData": {
+    "type": "Deposit",
+    "amount": "2000000000",
+    "asset": "0x...token_address..."
+  }
+}
+```
 ## Approach
 
 ### 1. **Data Loading**

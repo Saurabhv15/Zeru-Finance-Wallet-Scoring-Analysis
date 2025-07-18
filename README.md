@@ -1,12 +1,12 @@
 # Zeru Finance Wallet Credit Scoring
 
-## 📌 Problem Statement
+## Problem Statement
 
 The goal of this project is to assign a **credit score** to each wallet address based on its transaction history in the Aave V2 protocol. The score reflects the creditworthiness of a wallet using features like deposits, borrowings, repayments, and liquidation events.
 
 ---
 
-## 🛠️ Approach
+## Approach
 
 ### 1. **Data Loading**
 

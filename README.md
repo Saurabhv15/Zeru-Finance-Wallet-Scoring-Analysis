@@ -30,10 +30,8 @@ Created features for each wallet:
 ### 4. **Scoring Function**
 
 Calculated credit scores using:
+`Score = α * RepayBorrowRatio_norm + β * DepositAmount_norm - γ * LiquidationFlag`
 
-\[
-\text{Score} = \alpha \times \text{RepayBorrowRatio}_{norm} + \beta \times \text{DepositAmount}_{norm} - \gamma \times \text{LiquidationFlag}
-\]
 
 - Normalised each feature
 - Weighted and combined them
